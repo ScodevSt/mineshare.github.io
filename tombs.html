@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+        <title>MineShare</title>
+        <meta name="description" content="" />
+        <link rel="canonical" href="https://mineshare.com/" />
+        <link rel="icon" href="images/logo.png" />
+        <link rel="apple-touch-icon" href="images/logo.png" />
+    </head>
+    <body>
+        <nav class="navbar ml">
+            <div class="navbar__logo">
+                <img class="logo" src="images/logo.png" alt="" />
+                <h2>MineShare</h2>
+            </div>
+            <div class="navbar__search">
+                <i class="fa fa-search"> </i>
+                <input
+                    type="text"
+                    name
+                    id="find"
+                    placeholder="Search..."
+                    onkeyup="search()"
+                    autocomplete="off"
+                />
+            </div>
+
+            <div class="links links--hover-y navbar__menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <!-- <li><a href="#">Dev Tools</a></li> -->
+                    <li><a href="sections/about/about.html">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- <div class="links links--hover-y">
+                <ul>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </div> -->
+            <div class="navbar__mode">
+                <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+            </div>
+            <i class="bi bi-list"></i>
+        </nav>
+
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img class="logo" src="images/logo.png" alt="" />
+                <h2>MineShare</h2>
+            </div>
+        </aside>
+
+        {% include footer.html %}
+        <!-- <footer class="footer ml">
+            <div class="logo-container">
+                <h3 class="footer__text">Scodev Studios</h3>
+            </div>
+            <div class="links--hover-y">
+                <ul>
+                    <li><a href="#" class="footer__text">Home</a></li>
+                    <li><a href="#" class="footer__text">About Us</a></li>
+                    <li><a href="#" class="footer__text">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.paypal.me/PedroGame12"
+                            target="_blank"
+                            ><i class="fa-brands fa-paypal footer__text"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@Scodev"
+                            target="_blank"
+                            ><i class="fa-brands fa-youtube footer__text"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Scodev_" target="_blank"
+                            ><i class="fa-brands fa-twitter footer__text"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/daqQBfbE" target="_blank"
+                            ><i class="fa-brands fa-discord footer__text"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+        </footer> -->
+
+        <script src="content/js/main.js"></script>
+    </body>
+</html>
